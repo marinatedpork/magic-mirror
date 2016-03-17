@@ -1,0 +1,73 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  overflow: hidden;
+  letter-spacing: 1.5px;
+}
+
+.backdrop {
+  background-color: #2E3236;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+#widgets {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+#clock {
+  font-size: 96px;
+}
+
+.description {
+  font-size: 32px; 
+}
+
+.degrees {
+  font-size: 42px;
+}
+
+#trivia {
+  font-size: 42px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#trivia .question-container, #trivia .answer {
+  transition: 1s opacity;
+  opacity: 0;
+}
+
+#trivia .show {
+  opacity: 1 !important;
+}
+
+#trivia .category {
+  text-decoration: italic;
+}
+
+#gauges {
+  flex: 1;
+}
+
+.weather-object {
+  position: absolute;
+  z-index: -1;
+  top: 0; bottom: 0; left: 0; right: 0;
+}

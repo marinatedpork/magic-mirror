@@ -1,0 +1,9 @@
+<div class="temperature">
+  <span class="degrees">{{degrees}}</span>
+  <span class="description">{{description}}</span>
+</div>
+<div class="sky">
+  {{#if weatherCondition}}
+    {{component weatherCondition}}
+  {{/if}}
+</div>
